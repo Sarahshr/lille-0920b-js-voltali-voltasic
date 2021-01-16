@@ -22,4 +22,4 @@ Sarah Sahraoui [github](https://github.com/Sarahshr)
 Thomas Mulhauser [github](https://github.com/ThomasMlh)  
 Francois-Xavier Colliot [github](https://github.com/Fx-Colliot)
 
-_Deployed on_ :
+_Deployed_ [here](https://lucid-fermi-d68bca.netlify.app)
