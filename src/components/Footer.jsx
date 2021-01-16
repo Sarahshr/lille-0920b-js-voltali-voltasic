@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+
 import Music from "./Music";
 
 const Box = styled.div`
@@ -32,38 +32,6 @@ const DeskBox = styled.div`
   justify-content: space-around;
   @media screen and (max-width: 500px) {
     display: none;
-  }
-`;
-
-const Lien = styled(Link)`
-  @media screen and (min-width: 501px) {
-    font-size: 3vh;
-    text-decoration: none;
-    color: yellow;
-  }
-`;
-
-const MobilBox = styled.div`
-  @media screen and (max-width: 500px) {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: space-between;
-  }
-  @media screen and (min-width: 501px) {
-    display: none;
-  }
-`;
-
-const LienMob = styled(Link)`
-  @media screen and (min-width: 501px) {
-    display: none;
-  }
-
-  @media screen and (max-width: 500px) {
-    font-size: 3vh;
-    color: yellow;
   }
 `;
 

@@ -4,7 +4,7 @@ import Carousel from "react-elastic-carousel";
 import styled from "styled-components";
 
 import mock from "./../../api/mock.json";
-import { Title, SongTitles, Img, DivImg } from "../homepage/CarouselStyled";
+import { Title, SongTitle, Img, DivImg } from "../homepage/CarouselStyled";
 
 const breakPoints = [
   { width: 1, itemsToShow: 1 },
@@ -25,12 +25,18 @@ const TrendArtists = () => {
   }, []);
 
   const Main = styled.div`
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-bottom: 7%;
     @media screen and (max-width: 500px) {
-      padding-top: 8%;
+      padding-top: 15%;
     }
     @media screen and (min-width: 501px) {
       background-color: black;
       padding-top: 5%;
+    }
+    @media screen and (max-width: 800px) {
+      padding-top: 15%;
     }
   `;
 
@@ -50,7 +56,7 @@ const TrendArtists = () => {
                 src={item.snippet.thumbnails.channelPic.url}
                 alt={item.snippet.channelTitle}
               />
-              <SongTitles>{item.snippet.channelTitle}</SongTitles>
+              <SongTitle>{item.snippet.channelTitle}</SongTitle>
             </Link>
           </DivImg>
         ))}

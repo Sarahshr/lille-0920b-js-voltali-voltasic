@@ -76,28 +76,10 @@ const List = styled.div`
   }
 `;
 
-const ListSelect = styled.div`
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  background-color: #1e1e20;
-  cursor: pointer;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-`;
-
 const Thumbnail = styled.img`
   width: 7%;
   margin: 10px;
   @media screen and (max-width: 501px) {
-  }
-`;
-
-const Img = styled.img`
-  width: 40%;
-  height: 10%;
-  @media screen and (max-width: 601px) {
-    width: 80%;
   }
 `;
 

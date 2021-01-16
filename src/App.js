@@ -6,6 +6,7 @@ import Nav from "./components/Nav";
 import List from "./components/List";
 import Playlist from "./components/artists/Playlist";
 import Footer from "./components/Footer";
+import NotFoundPage from "./components/NotFoundPage";
 
 import "./App.css";
 
@@ -31,6 +32,7 @@ const App = () => {
           path="/playlist/:id"
           render={() => <Playlist changeVideo={setIdVid} />}
         />
+        <Route path="*" component={NotFoundPage} />
       </Switch>
       <Footer idVideo={idVideo} idVid={idVid} />
     </div>

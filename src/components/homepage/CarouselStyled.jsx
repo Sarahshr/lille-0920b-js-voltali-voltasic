@@ -2,8 +2,13 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const Main = styled.div`
+  padding-left: 1%;
+  padding-right: 1%;
   background-color: black;
-  padding-bottom: 10%;
+  padding-bottom: 7%;
+  @media (max-width: 800px) {
+    padding-bottom: 15%;
+  }
 `;
 
 export const Title = styled.h2`
@@ -48,13 +53,13 @@ export const Image = styled.img`
   :hover {
     transform: scale(1.1);
   }
+  cursor: pointer;
 `;
 
 export const DivImg = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
   :hover {
     ${SongTitles} {
       visibility: visible;
@@ -63,6 +68,9 @@ export const DivImg = styled.div`
     ${Image} {
       transform: scale(1.1);
     }
+  }
+  @media screen and (min-width: 700px) and (max-width: 800px) {
+    margin-right: 8%;
   }
 `;
 
